@@ -2,6 +2,13 @@
 
 Python script that converts .mp4 videos to multiple .gif clips.
 
+## Uses
+
+- Grab small looping clips for teaching.
+- Pull the best clips from your projects to feature in Capability Decks.
+- Extract .gif from reference for Mood Boards.
+
+
 Useful for building mood boards from videos.
 
 ## Author(s)
@@ -33,7 +40,7 @@ convert-mp4-to-gif-clips.py -i INPUT_FILE
 ## Why?
 
 I teach Motion Design at California Institite of the Arts. It's helpful to breakdown longer animations into shorter clips.
-I'm posting this here in case anyone else doing motion
+I'm posting this here in case anyone else doing motion design needs to assemble decks/boards featuring the best clips from their own work.
 
 ## Inspiration
 
