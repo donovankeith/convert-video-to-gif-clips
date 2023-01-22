@@ -8,6 +8,19 @@ Python script that converts .mp4 videos to multiple .gif clips.
 - Pull the best clips from your projects to feature in Capability Decks.
 - Extract .gif from reference for Mood Boards.
 
+## Examples
+
+#### [BOX](https://www.youtube.com/watch?v=lX6JcybgDFo) by Bot & Dolly and [GMUNK](https://gmunk.com/BOX)
+
+![Clip from "BOX" by GMUNK and Box & Dolly](https://user-images.githubusercontent.com/4267389/213904341-0a2b40a9-ed59-4588-8993-a80b8e4b9cab.gif)
+![Clip from "BOX" by GMUNK and Box & Dolly](https://user-images.githubusercontent.com/4267389/213904343-1a306793-a509-4438-9569-ae27b8f6bc19.gif)
+
+#### [Flying Lotus Music Video](https://vimeo.com/15572863?embedded=true&source=vimeo_logo&owner=469120) by [Beeple](https://www.beeple-crap.com/)
+
+![_flying-lotus_kill-your-coworkers_by-beeple_003](https://user-images.githubusercontent.com/4267389/213904078-02b38e80-151a-4027-8ef2-43e4bd1c1a08.gif)
+![_flying-lotus_kill-your-coworkers_by-beeple_011](https://user-images.githubusercontent.com/4267389/213904158-cb62ca1c-04ca-4bea-ab1a-16ac242ab330.gif)
+
+
 ## 👨‍💼 Author(s)
 
 - [Donovan Keith](https://www.donovankeith.com)
@@ -86,13 +99,14 @@ I'm posting this here in case anyone else doing motion design needs to assemble 
 
 ## 💡 Inspiration
 
-[BOX](https://www.youtube.com/watch?v=lX6JcybgDFo)
-by
-Bot & Dolly and [GMUNK](https://gmunk.com/BOX)
+![Clip from "BOX" by GMUNK and Box & Dolly](https://user-images.githubusercontent.com/4267389/213904344-fe23a71a-42f6-4a67-9870-6050b053e4cb.gif)
+![Clip from "BOX" by GMUNK and Box & Dolly](https://user-images.githubusercontent.com/4267389/213904345-39be9ff1-37f6-4ad7-bd32-cfb826cea472.gif)
+![Clip from "BOX" by GMUNK and Box & Dolly](https://user-images.githubusercontent.com/4267389/213904346-18e3d9cc-505c-4896-af45-dc974961f4f3.gif)
+![Clip from "BOX" by GMUNK and Box & Dolly](https://user-images.githubusercontent.com/4267389/213904347-26e55456-f83f-473d-b0d2-5f76e2216832.gif)
 
-👆🏻 This video is so incredible that I just had to break it down into a series of 3 second clips so that I could watch each of the transitions over and over again.
+👆🏻 This project is so incredible that I just had to break it down into a series of 3 second clips so that I could watch each of the transitions over and over again.
 
-![Grid of Images from the video BOX](media/box-clips-in-moodboard.png)
+![box-clips-in-moodboard](https://user-images.githubusercontent.com/4267389/213904201-82a63398-354a-45e0-a757-9eb0715f2667.png)
 
 ## ❓Questions / Support?
 
