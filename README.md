@@ -1,4 +1,4 @@
-# convert-video-to-gif-clips
+# 🎥 convert-video-to-gif-clips 
 
 Python script that converts .mp4 videos to multiple .gif clips.
 
@@ -8,17 +8,17 @@ Python script that converts .mp4 videos to multiple .gif clips.
 - Pull the best clips from your projects to feature in Capability Decks.
 - Extract .gif from reference for Mood Boards.
 
-## Author(s)
+## 👨‍💼 Author(s)
 
 - [Donovan Keith](https://www.donovankeith.com)
 - [Chat GPT](https://chat.openai.com)
 
-## Requirements
+## 🔧 Requirements
 
 - [Python 3+](https://www.python.org/downloads/)
 - [FFmpeg](https://ffmpeg.org/)
 
-## Installation
+## 💾 Installation
 
 1. Install ffmpeg, you can find detailed instructions [here](https://www.ffmpeg.org/download.html)
 2. Clone this repository
@@ -27,15 +27,15 @@ Python script that converts .mp4 videos to multiple .gif clips.
 git clone https://github.com/your-username/convert-mp4-to-gif-clips.git
 ```
 
-## Quickstart
+## 🏁 Quickstart
 
-### Warning
+### ⚠️ Warning
 
 DO NOT USE WITH REALLY LONG VIDEOS
 
 1. Trim long movies down to the sections you're most interested in.
 
-### Instructions
+### 📋 Instructions
 
 1. Copy this script into a directory where you want to convert your files.
 2. Open terminal and `cd` to the directory.
@@ -71,7 +71,7 @@ python convert-mp4-to-gif-clips.py -i video.mp4
 python convert-mp4-to-gif-clips.py -i video.mp4 -o output.gif -spacing 2 -duration 5
 ```
 
-## Note
+## 🗒️ Note
 
 - The script will validate the input and provide errors with suggestions on how to fix them to the user.
 - Spacing should be an int or float value greater that 1/30
@@ -84,7 +84,7 @@ python convert-mp4-to-gif-clips.py -i video.mp4 -o output.gif -spacing 2 -durati
 I teach Motion Design at California Institite of the Arts. It's helpful to breakdown longer animations into shorter clips.
 I'm posting this here in case anyone else doing motion design needs to assemble decks/boards featuring the best clips from their own work.
 
-## Inspiration
+## 💡 Inspiration
 
 [BOX](https://www.youtube.com/watch?v=lX6JcybgDFo)
 by
@@ -94,18 +94,18 @@ Bot & Dolly and [GMUNK](https://gmunk.com/BOX)
 
 ![Grid of Images from the video BOX](media/box-clips-in-moodboard.png)
 
-## Questions / Support?
+## ❓Questions / Support?
 
 USE AT YOUR OWN RISK.
 
 Sorry to say, but I likely won't be able to offer much in the way of support, nor respond to feature requests.
 Feel free to add an issue, fork, fix, and pull request. I'll try to integrate when I've got some down time.
 
-## References
+## 📚 References
 
 - [GIPHY Engineering | » How to make GIFs with FFMPEG » How to make GIFs with FFMPEG](https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/): Reference for FFmpeg settings.
 - [Video Downloader for Vimeo - Chrome Web Store](https://chrome.google.com/webstore/detail/video-downloader-for-vime/cgmcdpfpkoildicgacgldinemhgmcbgp/related?hl=en): Useful for grabbing videos from YouTube/Vimeo.
 
-## AI Notice
+## 🤖 AI Notice
 
 This script & documentation was written in collaboration with ChatGPT.
