@@ -8,9 +8,6 @@ Python script that converts .mp4 videos to multiple .gif clips.
 - Pull the best clips from your projects to feature in Capability Decks.
 - Extract .gif from reference for Mood Boards.
 
-
-Useful for building mood boards from videos.
-
 ## Author(s)
 
 - [Donovan Keith](https://www.donovankeith.com)
