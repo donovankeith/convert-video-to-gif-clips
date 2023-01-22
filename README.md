@@ -1,4 +1,4 @@
-# 🎥 convert-video-to-gif-clips 
+# [🎥 convert-video-to-gif-clips]((https://github.com/donovankeith/convert-video-to-gif-clips))
 
 Python script that converts .mp4 videos to multiple .gif clips.
 
@@ -104,7 +104,7 @@ I'm posting this here in case anyone else doing motion design needs to assemble 
 ![Clip from "BOX" by GMUNK and Box & Dolly](https://user-images.githubusercontent.com/4267389/213904346-18e3d9cc-505c-4896-af45-dc974961f4f3.gif)
 ![Clip from "BOX" by GMUNK and Box & Dolly](https://user-images.githubusercontent.com/4267389/213904347-26e55456-f83f-473d-b0d2-5f76e2216832.gif)
 
-👆🏻 This project is so incredible that I just had to break it down into a series of 3 second clips so that I could watch each of the transitions over and over again.
+👆🏻 [This project](https://www.youtube.com/watch?v=lX6JcybgDFo) is so incredible that I just had to break it down into a series of 3 second clips so that I could watch each of the transitions over and over again.
 
 ![box-clips-in-moodboard](https://user-images.githubusercontent.com/4267389/213904201-82a63398-354a-45e0-a757-9eb0715f2667.png)
 
