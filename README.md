@@ -1,8 +1,6 @@
-# 🎥 convert-video-to-gif-clips 
+# [🎥 convert-video-to-gif-clips]((https://github.com/donovankeith/convert-video-to-gif-clips))
 
 Python script that converts .mp4 videos to multiple .gif clips.
-
-GitHub Repo: [donovankeith/convert-video-to-gif-clips: Python script that converts *.mp4 videos to multiple *.gif clips. Useful for building mood boards from videos.](https://github.com/donovankeith/convert-video-to-gif-clips)
 
 ## Uses
 
