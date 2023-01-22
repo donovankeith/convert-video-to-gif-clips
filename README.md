@@ -69,9 +69,8 @@ Feel free to add an issue, fork, fix, and pull request. I'll try to integrate wh
 
 ## References
 
-[GIPHY Engineering | » How to make GIFs with FFMPEG » How to make GIFs with FFMPEG](https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/)
-[4 Easy Ways to Extract Frames from Video with High Quality](https://www.videoproc.com/video-editor/extract-frames-from-video.htm)
-[Video Downloader for Vimeo - Chrome Web Store](https://chrome.google.com/webstore/detail/video-downloader-for-vime/cgmcdpfpkoildicgacgldinemhgmcbgp/related?hl=en)
+- [GIPHY Engineering | » How to make GIFs with FFMPEG » How to make GIFs with FFMPEG](https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/): Reference for FFmpeg settings.
+- [Video Downloader for Vimeo - Chrome Web Store](https://chrome.google.com/webstore/detail/video-downloader-for-vime/cgmcdpfpkoildicgacgldinemhgmcbgp/related?hl=en): Useful for grabbing videos from YouTube/Vimeo.
 
 ## AI Notice
 
