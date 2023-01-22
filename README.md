@@ -18,14 +18,25 @@ Useful for building mood boards from videos.
 
 ## Requirements
 
-- Python 3+
-- ffmpeg
+- [Python 3+](https://www.python.org/downloads/)
+- [FFmpeg](https://ffmpeg.org/)
 
 ## Quickstart
+
+### Warning
+
+DO NOT USE WITH REALLY LONG VIDEOS
+
+1. Trim long movies down to the sections you're most interested in.
+
+### Instructions
 
 1. Copy this script into a directory where you want to convert your files.
 2. Open terminal and `cd` to the directory.
 3. `python3 convert-mp4-to-gif-clips.py -i INPUT.mp4`
+4. Navigate to the new `gifs/` directory next to your input file.
+5. Use Quick Look (spacebar on Mac) and your up/down arrow keys to quickly audition the clips you want to use.
+6. Ctrl+C to copy, then Ctrl+V to paste in Google Slides or your 
 
 ## Usage
 
