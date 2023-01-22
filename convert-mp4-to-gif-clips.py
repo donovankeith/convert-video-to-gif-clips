@@ -8,50 +8,56 @@ import argparse
 import re
 import copy
 
-def convert_video_to_gif_clips(input_file, output_file, spacing_sec=3, duration_sec=3, width=480):
+def get_video_duration_in_sec(video_path):
+    """Convert video at `video_path` """
 
-    #set the width of the gifs to 480 pixels
-    width = int(width)
+    cmd = ['ffmpeg', '-i', video_path]
 
-    def get_duration(file_path):
-        cmd = ['ffmpeg', '-i', file_path]
-        try:
-            output = subprocess.check_output(cmd, stderr=subprocess.STDOUT).decode()
-        except subprocess.CalledProcessError as e:
-            output = e.output.decode()
-        matches = re.search(r"Duration:\s{1}(?P<hours>\d+?):(?P<minutes>\d+?):(?P<seconds>\d+\.\d+?),", output, re.DOTALL).groupdict()
-        hours = int(matches['hours'])
-        minutes = int(matches['minutes'])
-        seconds = float(matches['seconds'])
-        total_seconds = (hours * 3600) + (minutes * 60) + seconds
-        return total_seconds
+    try:
+        output = subprocess.check_output(cmd, stderr=subprocess.STDOUT).decode()
+    except subprocess.CalledProcessError as e:
+        output = e.output.decode()
+
+    matches = re.search(r"Duration:\s{1}(?P<hours>\d+?):(?P<minutes>\d+?):(?P<seconds>\d+\.\d+?),", output, re.DOTALL).groupdict()
+
+    hours = int(matches['hours'])
+    minutes = int(matches['minutes'])
+    seconds = float(matches['seconds'])
+    
+    total_seconds = (hours * 3600) + (minutes * 60) + seconds
+
+    return total_seconds
 
 
-    #convert the length of the video from bytes to float
-    video_length = get_duration(input_file)
+def convert_video_to_gif_clips(input_file, output_file, spacing_sec=3, duration_sec=3, width_px=480):
+    width_px = int(width_px)
+    video_dur_sec = get_video_duration_in_sec(input_file)
+    total_clip_count = int(video_dur_sec / duration_sec)
 
     #set the start time for the first subclip
-    start_time = 0
+    start_sec = 0
 
     #create a counter for naming the gifs
     counter = 1
 
     #loop through the video, creating subclips
-    while start_time < video_length:
+    while start_sec < video_dur_sec:
+        print(f'[{counter}/{total_clip_count}] Converting {start_sec}-{min(start_sec+duration_sec, video_dur_sec)}')
+
         # Reference
         # https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/
         subprocess.call([
             "ffmpeg",
-            "-ss", str(start_time),
+            "-ss", str(start_sec),
             "-t", str(duration_sec),
             "-i", input_file,
-            "-filter_complex", f"[0:v] fps=12,scale={width}:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse",
-            output_file[:-4] + f"{counter:06}" + '.gif'
+            "-filter_complex", f"[0:v] fps=12,scale={width_px}:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse",
+            output_file[:-4] + f"_{counter:03}" + '.gif'
         ]
         )
 
         #increment the start time for the next subclip
-        start_time += spacing_sec
+        start_sec += spacing_sec
 
         #increment the counter for naming the gifs
         counter += 1
@@ -89,6 +95,8 @@ def validate_input(args):
     return args
 
 if __name__ == "__main__":
+    print("Convert *.mp4 Videos to *.gif Clips")
+
     parser = argparse.ArgumentParser(description='Dummy script that prints the input given by the user')
     parser.add_argument('-i', '--input_file', help='Input file with .mp4 extension', required=True)
     parser.add_argument('-o', '--output_file', help='Output file with .gif extension')
