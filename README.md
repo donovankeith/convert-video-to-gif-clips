@@ -18,6 +18,15 @@ Python script that converts .mp4 videos to multiple .gif clips.
 - [Python 3+](https://www.python.org/downloads/)
 - [FFmpeg](https://ffmpeg.org/)
 
+## Installation
+
+1. Install ffmpeg, you can find detailed instructions [here](https://www.ffmpeg.org/download.html)
+2. Clone this repository
+
+```
+git clone https://github.com/your-username/convert-mp4-to-gif-clips.git
+```
+
 ## Quickstart
 
 ### Warning
@@ -33,17 +42,42 @@ DO NOT USE WITH REALLY LONG VIDEOS
 3. `python3 convert-mp4-to-gif-clips.py -i INPUT.mp4`
 4. Navigate to the new `gifs/` directory next to your input file.
 5. Use Quick Look (spacebar on Mac) and your up/down arrow keys to quickly audition the clips you want to use.
-6. Ctrl+C to copy, then Ctrl+V to paste in Google Slides or your 
+6. Ctrl+C to copy, then Ctrl+V to paste in Google Slides or your
 
 ## Usage
 
 ```
-convert-mp4-to-gif-clips.py -i INPUT_FILE
-                            [-o OUTPUT_FILE]
-                            [-spacing CLIP_SPACING]
-                            [-duration CLIP_DURATION]
-                            [-w WIDTH]
+python convert-mp4-to-gif-clips.py -i <input_file> -o <output_file> -spacing <clip_spacing_sec> -duration <clip_duration_sec>
 ```
+
+### Options
+
+- -i, --input_file: Path to the input video file. Default is 'BOX.mp4'
+- -o, --output_file: Path to the output gif file. If not provided, it will save the gif clips to a 'gifs' directory next to the input file.
+- -spacing, --clip_spacing: Spacing between clips in seconds. Default is 1 second.
+- -duration, --clip_duration: Duration of each clip in seconds. Default is 3 seconds.
+
+### Examples
+
+- Convert 'video.mp4' to gif clips, save the clips in the 'gifs' directory and use the default spacing and duration
+
+```
+python convert-mp4-to-gif-clips.py -i video.mp4
+```
+
+- Convert 'video.mp4' to gif clips, save the clips in 'output.gif' and use a spacing of 2 seconds and duration of 5 seconds
+
+```
+python convert-mp4-to-gif-clips.py -i video.mp4 -o output.gif -spacing 2 -duration 5
+```
+
+## Note
+
+- The script will validate the input and provide errors with suggestions on how to fix them to the user.
+- Spacing should be an int or float value greater that 1/30
+- Duration should not exceed 30 as the .gif file will be far too large.
+- If the 'gifs' directory doesn't exist it will be created.
+- The script will set the width of the gifs to 480 pixels.
 
 ## Why?
 
@@ -74,4 +108,4 @@ Feel free to add an issue, fork, fix, and pull request. I'll try to integrate wh
 
 ## AI Notice
 
-This script was written in collaboration with ChatGPT.
+This script & documentation was written in collaboration with ChatGPT.
