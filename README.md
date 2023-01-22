@@ -23,7 +23,7 @@ Python script that converts .mp4 videos to multiple .gif clips.
 1. Install ffmpeg, you can find detailed instructions [here](https://www.ffmpeg.org/download.html)
 2. Clone this repository
 
-```
+```console
 git clone https://github.com/your-username/convert-mp4-to-gif-clips.git
 ```
 
@@ -46,7 +46,7 @@ DO NOT USE WITH REALLY LONG VIDEOS
 
 ## Usage
 
-```
+```console
 python convert-mp4-to-gif-clips.py -i <input_file> -o <output_file> -spacing <clip_spacing_sec> -duration <clip_duration_sec>
 ```
 
@@ -61,13 +61,13 @@ python convert-mp4-to-gif-clips.py -i <input_file> -o <output_file> -spacing <cl
 
 - Convert 'video.mp4' to gif clips, save the clips in the 'gifs' directory and use the default spacing and duration
 
-```
+```console
 python convert-mp4-to-gif-clips.py -i video.mp4
 ```
 
 - Convert 'video.mp4' to gif clips, save the clips in 'output.gif' and use a spacing of 2 seconds and duration of 5 seconds
 
-```
+```console
 python convert-mp4-to-gif-clips.py -i video.mp4 -o output.gif -spacing 2 -duration 5
 ```
 
